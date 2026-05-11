@@ -9,10 +9,9 @@
 </head>
 <body>
     <div id="main">
-        <audio id="background-audio" autoplay loop>
-            <source src="song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <audio id="background-audio" loop>
+          <source src="./song.mp3" type="audio/mpeg">
+       </audio>
         
         <div id="back">
             <img src="1.png" alt="">
@@ -58,10 +57,9 @@
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 <script src="sevendraft.js"></script>
-    <script>
-window.addEventListener("click", () => {
-    const audio = document.getElementById("background-audio");
-    audio.play();
+ <script>
+document.body.addEventListener("click", function () {
+  document.getElementById("background-audio").play();
 });
 </script>
 
